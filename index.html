@@ -435,7 +435,7 @@ body{padding-bottom:84px}
 // 설정값: 대표님 확인 후 채움
 var CONFIG={
   GA_ID:"",          // 구글 애널리틱스 측정 ID (G-로 시작)
-  FORM_URL:""        // 상담 신청서 받는 곳 (구글 시트 연결 주소)
+  FORM_URL:"https://script.google.com/macros/s/AKfycbzSZJ0P4_1s-VEsXExJjmf9r-OvtduYd2qgQdtxYsjsNmpI3-jx2QwIuO1v6hNxaSImLA/exec"        // 상담 신청서 받는 곳 (구글 시트 연결 주소)
 };
 if(CONFIG.GA_ID){var g=document.createElement('script');g.async=1;g.src='https://www.googletagmanager.com/gtag/js?id='+CONFIG.GA_ID;document.head.appendChild(g);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',CONFIG.GA_ID);}
 function track(n,p){if(window.gtag)gtag('event',n,p||{})}
